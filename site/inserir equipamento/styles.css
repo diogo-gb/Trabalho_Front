@@ -1,0 +1,65 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('trator.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fafafa;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Estilos do formulário de adição de equipamento */
+.add-equipment-form {
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.add-equipment-form h2 {
+    margin-bottom: 1rem;
+}
+
+.add-equipment-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.add-equipment-form input, .add-equipment-form button {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.return-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header, footer {
+        padding: 0.5rem;
+    }
+}

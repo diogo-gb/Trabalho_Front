@@ -1,0 +1,99 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4DDAD9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: central;
+    position: relative;
+    display: flex; /* Use flexbox para ajustar a posição do rodapé */
+    flex-direction: column; /* Alinhe os elementos verticalmente */
+    min-height: 100vh; /* Garanta que o conteúdo ocupe pelo menos toda a altura da tela */
+
+}
+
+/* Adição do círculo no fundo */
+body::before {
+    content: "";
+    position: absolute;
+    width: 1000px; 
+    height: 1000px; 
+    background-color: #92D960; 
+    border-radius: 50%; 
+    top: 55%; 
+    left: 100%; 
+    transform: translate(-50%, -50%); 
+    z-index: -1; 
+}
+
+header, footer {
+    background-color: #92D960;
+    color: #000000;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+/* Estilos do formulário de cadastro */
+.registration-form {
+    position: absolute;
+    right: 20px;
+    width: 320px;
+    height: 500px;
+    /* border: 1px solid #ddd; */
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+input {
+    border: 10px solid #0f0; 
+    background-color: #f00;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.registration-form input, .registration-form select, .registration-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.registration-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsividade do formulário de cadastro */
+@media (max-width: 768px) {
+    .registration-form {
+        width: 50%; /* Preenche a largura disponível */
+        max-width: none; /* Redefina a largura máxima para que o formulário possa se estender */
+        margin: 0; /* Redefina as margens para eliminar qualquer espaço extra */
+        border: none; /* Remova a borda para uma aparência mais limpa em telas menores */
+        border-radius: 0; /* Redefina a borda para eliminar bordas arredondadas */
+    }
+}
+
+    
+    /* Ajuste a posição do círculo para telas menores */
+    body::before {
+        width: 900px;
+        height: 800px;
+    }
+}

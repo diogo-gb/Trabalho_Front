@@ -1,0 +1,51 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('trator.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Estilos dos detalhes do equipamento */
+.equipment-details {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.equipment-details h2 {
+    margin-bottom: 1rem;
+}
+
+.details p {
+    margin-bottom: 0.5rem;
+}
+
+.maintenance-history {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header, footer {
+        padding: 0.5rem;
+    }
+}
+

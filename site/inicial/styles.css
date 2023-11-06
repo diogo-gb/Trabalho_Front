@@ -1,0 +1,61 @@
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;    margin: 0;
+    padding: 0;
+    font-size: 62,5%;
+    background-image: url('trator.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header, footer {
+    background-color: #92D960;
+    color: #000000;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 3rem;
+}
+
+/* Estilos do formulário de login */
+.login-form {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+}
+
+.login-form input, .login-form button {
+    display: block;
+    width: 95%;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 2px solid #000000;
+    border-radius: 45px;
+}
+
+.login-form button {
+    background-color: #FEAE3C;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos da seção de introdução */
+.intro {
+    margin-bottom: 1rem;
+}
+
+.intro h2 {
+    font-size: 62,5%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header, footer {
+        padding: 0.1rem;
+    }
+}

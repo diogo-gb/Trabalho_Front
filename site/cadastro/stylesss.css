@@ -1,0 +1,76 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif; /* Define a família de fontes para o texto dentro do body */
+    margin: 0; /* Remove margens externas do body */
+    padding: 0; /* Remove preenchimento interno do body */
+    background-image: url(''); /* Define uma imagem de fundo (vazia neste caso) */
+    background-size: cover; /* Faz com que a imagem de fundo cubra todo o espaço do body */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+    background-attachment: central; /* Define a fixação da imagem de fundo como central */
+}
+
+/* Adição do círculo no fundo */
+body::before {
+    content: ""; /* Cria um elemento vazio antes do conteúdo do body */
+    position: absolute; /* Define a posição absoluta para o elemento */
+    width: 100px; /* Define a largura do círculo */
+    height: 100px; /* Define a altura do círculo */
+    background-color: #92D960; /* Define a cor de fundo do círculo */
+    border-radius: 50%; /* Torna o elemento um círculo ajustando o raio da borda */
+    top: 50%; /* Posiciona o elemento verticalmente no centro da página */
+    left: 50%; /* Posiciona o elemento horizontalmente no centro da página */
+    transform: translate(-50%, -50%); /* Centraliza o círculo usando transformações */
+    z-index: -1; /* Coloca o círculo atrás do conteúdo principal */
+}
+
+header, footer {
+    background-color: #92D960; /* Define a cor de fundo do cabeçalho e rodapé */
+    color: #000000; /* Define a cor do texto no cabeçalho e rodapé */
+    text-align: center; /* Centraliza o texto no cabeçalho e rodapé */
+    padding: 1rem; /* Adiciona preenchimento interno no cabeçalho e rodapé */
+}
+
+main {
+    padding: 2rem; /* Adiciona preenchimento interno ao conteúdo principal */
+}
+
+/* Estilos do formulário de cadastro */
+.registration-form {
+    position: absolute; /* Define a posição absoluta para o formulário */
+    right: 15px; /* Posiciona o formulário à direita do elemento pai */
+    width: 330px; /* Define a largura do formulário */
+    height: 500px; /* Define a altura do formulário */
+    border: 1px solid #ddd; /* Adiciona uma borda sólida ao redor do formulário */
+    padding: 1rem; /* Adiciona preenchimento interno ao formulário */
+    border-radius: 5px; /* Arredonda as bordas do formulário */
+    margin-top: 1rem; /* Adiciona uma margem superior para separar o formulário */
+}
+
+.registration-form label {
+    display: block; /* Faz com que as etiquetas sejam exibidas como blocos */
+    margin-bottom: 0.5rem; /* Adiciona uma margem inferior às etiquetas */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+}
+
+.registration-form input, .registration-form select, .registration-form button {
+    display: block; /* Faz com que os campos de entrada e botões sejam exibidos como blocos */
+    width: 100%; /* Faz com que ocupem toda a largura disponível */
+    margin-bottom: 0.5rem; /* Adiciona uma margem inferior aos campos de entrada e botões */
+    padding: 0.5rem; /* Adiciona preenchimento interno aos campos de entrada e botões */
+    border: 1px solid #ccc; /* Adiciona uma borda sólida ao redor dos campos de entrada e botões */
+    border-radius: 3px; /* Arredonda as bordas dos campos de entrada e botões */
+}
+
+.registration-form button {
+    background-color: #333; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar o mouse sobre o botão */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header, footer {
+        padding: 0.5rem; /* Reduz o preenchimento do cabeçalho e rodapé em telas menores */
+    }
+}

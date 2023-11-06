@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Adicionar Novo Equipamento</title>
+</head>
+<body>
+    <header>
+        <h1>Inserir Equipamento</h1>
+    </header>
+    <main>
+        <section class="add-equipment-form">
+            <h2>Preencha as informações do novo equipamento</h2>
+            <form id="newEquipmentForm">
+                <label for="name">Nome do Equipamento:</label>
+                <input type="text" id="name" placeholder="Nome do Equipamento" required>
+                
+                <label for="model">Modelo:</label>
+                <input type="text" id="model" placeholder="Modelo" required>
+                
+                <label for="serialNumber">Número de Série:</label>
+                <input type="text" id="serialNumber" placeholder="Número de Série" required>
+                
+                <label for="purchaseDate">Data de Compra:</label>
+                <input type="date" id="purchaseDate" required>
+                
+                <button type="submit">Adicionar Equipamento</button>
+            </form>
+            <button class="return-btn" onclick="goBack()">Retornar à Tela Principal</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
